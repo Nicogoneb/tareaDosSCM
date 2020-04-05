@@ -73,6 +73,15 @@ public class Usuario {
         this.edad = edad;
         this.cantidadDeHijos = cantidadDeHijos;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        final Usuario other = (Usuario) obj;
+        if (this.cedula != other.cedula) {
+            return false;
+        }
+        return true;
+    }
     
     
 }
