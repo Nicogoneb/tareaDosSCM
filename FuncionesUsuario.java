@@ -43,4 +43,9 @@ public class FuncionesUsuario {
         
         return retorno ;
     }
+    public void cobrarSueldo(){
+        Usuario u = new Usuario();
+        
+        u.setSaldo(0);
+    }
 }
